@@ -1,0 +1,37 @@
+﻿@model List<BookClass>
+
+@{
+    ViewData["Title"] = "Список книг";
+}
+
+<div class="test">
+
+
+    <table class="table">
+        <tr class="main">
+            <td>Id</td>
+            <td>Название книги</td>
+            <td>Автор</td>
+            <td>Год издания</td>
+
+        </tr>
+        @foreach (var p in Model)
+        {
+            <tr class="str">
+                <td>@p.Id</td>
+                <td>@p.Name</td>
+                <td>@p.Author</td>
+                <td>@p.Year</td>
+            </tr>
+
+        }
+    </table>
+    <div class="bot">
+        <a class="bottom" asp-action="Creat">Добавить новую книгу</a>
+    </div>
+
+</div>
+
+
+
+

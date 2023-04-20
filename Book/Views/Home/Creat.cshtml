@@ -1,0 +1,23 @@
+﻿@model BookClass
+<form asp-action="creat" asp-controller="home">
+
+    <div class="container1">
+        <div class="text_in">
+            <input asp-for="Name" class="text_field" type="text" required>
+            <label asp-for="Name" class="text_field_lab">Название книги</label>
+
+        </div>
+        <div class="text_in">
+            <input asp-for="Author" class="text_field" type="text" required>
+            <label asp-for="Author" class="text_field_lab">Автор</label>
+        </div>
+        <div class="text_in">
+            <input asp-for="Year" class="text_field" type="text" required>
+            <label asp-for="Year" class="text_field_lab">Год издания</label>
+        </div>
+       
+
+        <input class="bottom" type="submit" value="Отправить" />
+
+    </div>
+</form>
